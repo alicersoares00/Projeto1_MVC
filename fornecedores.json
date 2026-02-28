@@ -1,0 +1,12 @@
+[
+  {
+    "nome": "Júlio",
+    "id_fornecedor": "F1",
+    "contato": "julio@email.com"
+  },
+  {
+    "nome": "Lici",
+    "id_fornecedor": "F2",
+    "contato": "lici@email.com"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id_venda": "4fa7b6de-8359-48bc-991d-2a6bac18d5e3",
+    "cliente": {
+      "nome": "Alice",
+      "cpf": "12341234123",
+      "idade": 25,
+      "email": "alice@email.com"
+    },
+    "produtos": [
+      {
+        "nome": "Alface",
+        "id_produto": "1",
+        "preco": "2.00",
+        "categoria": "Verduras",
+        "fornecedor": "Júlio"
+      },
+      {
+        "nome": "Alface",
+        "id_produto": "1",
+        "preco": "2.00",
+        "categoria": "Verduras",
+        "fornecedor": "Júlio"
+      }
+    ],
+    "total": 4.0,
+    "data": "2026-02-28T00:40:39"
+  }
+]

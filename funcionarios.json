@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Carlos",
+    "id_funcionario": "FUNC1",
+    "cargo": "Caixa",
+    "email": "carlos@email.com"
+  },
+  {
+    "nome": "Fernanda",
+    "id_funcionario": "FUNC2",
+    "cargo": "Gerente",
+    "email": "fernanda@email.com"
+  }
+]

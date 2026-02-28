@@ -1,0 +1,23 @@
+[
+  {
+    "nome": "Alface",
+    "id_produto": "1",
+    "preco": "2.00",
+    "categoria": "Verduras",
+    "fornecedor": "Júlio"
+  },
+  {
+    "nome": "Tomate",
+    "id_produto": "2",
+    "preco": "3.50",
+    "categoria": "Verduras",
+    "fornecedor": "Júlio"
+  },
+  {
+    "nome": "Café",
+    "id_produto": "3",
+    "preco": "8.50",
+    "categoria": "Bebidas",
+    "fornecedor": "Lici"
+  }
+]

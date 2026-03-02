@@ -6,12 +6,18 @@ class CaixaController:
     def __init__(self):
         self.dao = CaixaDAO()
 
-    def registrar_venda(self, cliente: Cliente, produtos: list[Produto]):
+    def registrar_venda(self, cliente: Cliente, produtos: list[Produto], pagamento: float = None):
         # calcula o total
         total = sum(float(p.preco) for p in produtos)
         venda = Venda(cliente, produtos, total)
         self.dao.criar(cliente, produtos, total)
-        return venda
+        
+        troco = None
+        if pagamento is not None:
+            troco = round(float(pagamento) - total, 2)
+
+        return venda, troco
+
 
     def buscar_venda(self, id_venda: str):
         return self.dao.ler_venda(id_venda)

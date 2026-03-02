@@ -336,8 +336,21 @@ def menu_caixa():
                 produtos.append(Produto(**produto_dict))
 
             # Registrar venda
-            venda = controller.registrar_venda(cliente, produtos)
-            print("Venda registrada:", venda.__dict__)
+            pagamento = input("Valor pago em dinheiro (ou ENTER se não for dinheiro): ")
+            if pagamento.strip() == "":
+                venda, troco = controller.registrar_venda(cliente, produtos)
+            else:
+                venda, troco = controller.registrar_venda(cliente, produtos, float(pagamento))
+
+            print("\n--- RESUMO DA VENDA ---")
+            print(f"Cliente: {venda.cliente['nome']}")
+            print("Produtos:")
+            for p in venda.produtos:
+                print(f" - {p['nome']} | R$ {p['preco']}")
+            print(f"TOTAL: R$ {venda.total:.2f}")
+            if troco is not None:
+                print(f"Pagamento: R$ {pagamento}")
+                print(f"Troco: R$ {troco:.2f}")
 
         elif opcao == "2":
             id_venda = input("ID da venda: ")
@@ -347,7 +360,12 @@ def menu_caixa():
         elif opcao == "3":
             vendas = controller.listar_vendas()
             for v in vendas:
-                print(v)
+                print(f"Cliente: {v['cliente']['nome']}")
+                print("Produtos:")
+                for p in v['produtos']:
+                    print(f" - {p['nome']} | R$ {p['preco']}")
+                print(f"TOTAL: R$ {v['total']:.2f}")
+                print("-" * 30)
 
         elif opcao == "4":
             id_venda = input("ID da venda: ")
@@ -369,7 +387,7 @@ def menu_caixa():
 
 def menu_geral():
     print('######## SISTEMA DE GERENCIAMENTO ########')
-    setor = int(input('Escolha o setor:\n1.CLIENTES\n2.FUNCIONÁRIOS\n3.CATEGORIAS\n4.FORNECEDORES\n5.PRODUTOS\n6.CAIXA--> '))
+    setor = int(input('Escolha o setor:\n1.CLIENTES\n2.FUNCIONÁRIOS\n3.CATEGORIAS\n4.FORNECEDORES\n5.PRODUTOS\n6.CAIXA\n--> '))
 
     if setor == 1:
         return menu_cliente()

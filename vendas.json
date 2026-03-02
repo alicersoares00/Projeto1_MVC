@@ -1,29 +1,130 @@
 [
-  {
-    "id_venda": "4fa7b6de-8359-48bc-991d-2a6bac18d5e3",
-    "cliente": {
-      "nome": "Alice",
-      "cpf": "12341234123",
-      "idade": 25,
-      "email": "alice@email.com"
+    {
+        "id_venda": "4fa7b6de-8359-48bc-991d-2a6bac18d5e3",
+        "cliente": {
+            "nome": "Alice",
+            "cpf": "12341234123",
+            "idade": 25,
+            "email": "alice@email.com"
+        },
+        "produtos": [
+            {
+                "nome": "Alface",
+                "id_produto": "1",
+                "preco": "2.00",
+                "categoria": "Verduras",
+                "fornecedor": "J\u00c3\u00balio"
+            },
+            {
+                "nome": "Alface",
+                "id_produto": "1",
+                "preco": "2.00",
+                "categoria": "Verduras",
+                "fornecedor": "J\u00c3\u00balio"
+            }
+        ],
+        "total": 4.0,
+        "data": "2026-02-28T00:40:39"
     },
-    "produtos": [
-      {
-        "nome": "Alface",
-        "id_produto": "1",
-        "preco": "2.00",
-        "categoria": "Verduras",
-        "fornecedor": "Júlio"
-      },
-      {
-        "nome": "Alface",
-        "id_produto": "1",
-        "preco": "2.00",
-        "categoria": "Verduras",
-        "fornecedor": "Júlio"
-      }
-    ],
-    "total": 4.0,
-    "data": "2026-02-28T00:40:39"
-  }
+    {
+        "id_venda": "c53d4f81-e230-405c-b8a0-94d653f7b924",
+        "cliente": {
+            "cpf": "12341234123",
+            "nome": "Alice",
+            "idade": 25,
+            "email": "alice@email.com"
+        },
+        "produtos": [
+            {
+                "nome": "Alface",
+                "id_produto": "1",
+                "preco": "2.00",
+                "categoria": "Verduras",
+                "fornecedor": "J\u00c3\u00balio"
+            },
+            {
+                "nome": "Alface",
+                "id_produto": "1",
+                "preco": "2.00",
+                "categoria": "Verduras",
+                "fornecedor": "J\u00c3\u00balio"
+            },
+            {
+                "nome": "Alface",
+                "id_produto": "1",
+                "preco": "2.00",
+                "categoria": "Verduras",
+                "fornecedor": "J\u00c3\u00balio"
+            }
+        ],
+        "total": 6.0,
+        "data": "2026-03-02T09:20:38.863093"
+    },
+    {
+        "id_venda": "11b56ce4-d15b-4d07-8a42-754647ddcc57",
+        "cliente": {
+            "cpf": "12341234123",
+            "nome": "Alice",
+            "idade": 25,
+            "email": "alice@email.com"
+        },
+        "produtos": [
+            {
+                "nome": "Alface",
+                "id_produto": "1",
+                "preco": "2.00",
+                "categoria": "Verduras",
+                "fornecedor": "J\u00c3\u00balio"
+            },
+            {
+                "nome": "Alface",
+                "id_produto": "1",
+                "preco": "2.00",
+                "categoria": "Verduras",
+                "fornecedor": "J\u00c3\u00balio"
+            }
+        ],
+        "total": 4.0,
+        "data": "2026-03-02T09:33:09.927530"
+    },
+    {
+        "id_venda": "c15816f5-2bd0-4560-922b-4f06916255c3",
+        "cliente": {
+            "cpf": "12341234123",
+            "nome": "Alice",
+            "idade": 25,
+            "email": "alice@email.com"
+        },
+        "produtos": [
+            {
+                "nome": "Alface",
+                "id_produto": "1",
+                "preco": "2.00",
+                "categoria": "Verduras",
+                "fornecedor": "J\u00c3\u00balio"
+            }
+        ],
+        "total": 2.0,
+        "data": "2026-03-02T09:39:55.830550"
+    },
+    {
+        "id_venda": "e4438d2a-71ef-4508-8868-b190f7047ea4",
+        "cliente": {
+            "cpf": "12341234123",
+            "nome": "Alice",
+            "idade": 25,
+            "email": "alice@email.com"
+        },
+        "produtos": [
+            {
+                "nome": "Alface",
+                "id_produto": "1",
+                "preco": "2.00",
+                "categoria": "Verduras",
+                "fornecedor": "J\u00c3\u00balio"
+            }
+        ],
+        "total": 2.0,
+        "data": "2026-03-02T09:42:09.878702"
+    }
 ]
